@@ -4,4 +4,4 @@ metadata:
   name: parksmap
 spec:
   finalizers:
-  - kubernets
+  - kubernetes
