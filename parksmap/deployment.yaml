@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: parksmap
+  name: parksmap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: parksmap
+  template: 
+    metadata:
+      labels:
+        app: parksmap
+    spec: 
+      containers:
+        - image: quay.io/openshiftroadshow/parksmap
+          imagePullPolicy: Always
+          name: parksmap
+          ports:
+            - containerPort: 8000
+              protocol: TCP

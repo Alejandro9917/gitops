@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: parksmap
+  name: parksmap
+spec:
+  port:
+    targerPort: 8000
+  tls:
+    termination: edge
+  to: 
+    kind: Service
+    name: parksmap
+    weight: 100
+  wildcardPolicy: None
