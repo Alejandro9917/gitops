@@ -6,7 +6,7 @@ metadata:
   name: parksmap
 spec:
   port:
-    targerPort: 8000
+    targetPort: 8000
   tls:
     termination: edge
   to: 
