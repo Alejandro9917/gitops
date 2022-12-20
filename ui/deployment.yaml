@@ -14,7 +14,7 @@ spec:
       labels:
         app: vote-ui
     spec:
-      container:
+      containers:
         - image: quay.io/openshift-pipeline/vote-ui:latest
           imagePullPolicy: Always
           name: vote-ui
